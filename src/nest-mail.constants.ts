@@ -1,0 +1,2 @@
+export const NEST_MAILER_OPTIONS = 'MAILER_OPTIONS';
+export const NEST_MAILER = 'NEST_MAILER';

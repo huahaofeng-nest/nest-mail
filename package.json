@@ -1,6 +1,6 @@
 {
-  "name": "ts-package-template",
-  "version": "1.0.4",
+  "name": "@nikola-hua/nest-mail",
+  "version": "1.0.0",
   "description": "",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -23,7 +23,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/huahaofeng/ts-package-template.git"
+    "url": "git+https://github.com/huahaofeng/nest-mail.git"
   },
   "keywords": [
     "typescript",
@@ -36,12 +36,22 @@
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/huahaofeng/ts-package-template/issues"
+    "url": "https://github.com/huahaofeng/nest-mail/issues"
   },
-  "homepage": "https://github.com/huahaofeng/ts-package-template#readme",
+  "homepage": "https://github.com/huahaofeng/nest-mail#readme",
+  "dependencies": {
+    "@nestjs/common": "^7.0.0",
+    "glob": "^7.1.6",
+    "handlebars": "^4.7.6",
+    "inline-css": "^2.6.3",
+    "log4js": "^6.3.0",
+    "nodemailer": "^6.4.13",
+    "preview-email": "^2.0.2"
+  },
   "devDependencies": {
     "@types/jest": "25.1.4",
     "@types/node": "^13.9.1",
+    "@types/nodemailer": "^6.4.0",
     "@types/supertest": "^2.0.8",
     "@typescript-eslint/eslint-plugin": "^2.23.0",
     "@typescript-eslint/parser": "^2.23.0",
@@ -58,7 +68,6 @@
     "typescript": "^3.7.4",
     "rimraf": "^3.0.2"
   },
-  "dependencies": {},
   "files": [
     "dist/**/*"
   ]
