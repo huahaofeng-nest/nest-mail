@@ -1,7 +1,7 @@
 /** Dependencies **/
 import { SendMailOptions } from 'nodemailer';
 
-export interface MailerSendMailOptions extends SendMailOptions {
+export type MailerSendMailOptions = SendMailOptions & {
   template?: string;
   context?: any;
 }
