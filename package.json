@@ -40,15 +40,21 @@
   },
   "homepage": "https://github.com/huahaofeng/nest-mail#readme",
   "dependencies": {
-    "@nestjs/common": "^7.0.0",
     "glob": "^7.1.6",
-    "handlebars": "^4.7.6",
     "inline-css": "^2.6.3",
     "log4js": "^6.3.0",
-    "nodemailer": "^6.4.13",
     "preview-email": "^2.0.2"
   },
+  "peerDependencies": {
+    "@nestjs/common": "^7.0.0",
+    "handlebars": "^4.7.6",
+    "nodemailer": "^6.4.13"
+  },
+  "optionalDependencies": {
+    "handlebars": "^4.7.6"
+  },
   "devDependencies": {
+    "@nestjs/common": "^7.0.0",
     "@types/jest": "25.1.4",
     "@types/node": "^13.9.1",
     "@types/nodemailer": "^6.4.0",
@@ -59,6 +65,7 @@
     "eslint-config-prettier": "^6.10.0",
     "eslint-plugin-import": "^2.20.1",
     "jest": "^25.1.0",
+    "nodemailer": "^6.4.13",
     "prettier": "^1.19.1",
     "supertest": "^4.0.2",
     "ts-jest": "25.2.1",
