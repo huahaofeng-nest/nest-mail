@@ -11,9 +11,9 @@ export class NestMailModule {
   }
 
   public static register(options: MailerOptions = {}): DynamicModule {
-    if (typeof options.template?.adapter === 'string') {
+    if (options.template && typeof options.template.adapter === 'string') {
       if (options.template.adapter === 'HandlebarsAdapter') {
-        const HandlebarsAdapter = require('./adapters/handlebars.adapter');
+        const { HandlebarsAdapter } = require('./adapters/handlebars.adapter');
         options.template.adapter = new HandlebarsAdapter();
       }
     }
