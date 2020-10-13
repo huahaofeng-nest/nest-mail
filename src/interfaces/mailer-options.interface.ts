@@ -34,7 +34,7 @@ export interface MailerOptions {
   defaults?: Options;
   transport?: TransportType;
   template?: {
-    adapter?: TemplateAdapter;
+    adapter?: TemplateAdapter | string;
     options?: { [name: string]: any };
   };
   options?: { [name: string]: any };
