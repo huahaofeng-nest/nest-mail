@@ -10,7 +10,14 @@ export class NestMailModule {
     return this.register(options);
   }
 
-  public static register(options?: MailerOptions): DynamicModule {
+  public static register(options: MailerOptions = {}): DynamicModule {
+    if (typeof options.template?.adapter === 'string') {
+      if (options.template.adapter === 'HandlebarsAdapter') {
+        const HandlebarsAdapter = require('./adapters/handlebars.adapter');
+        options.template.adapter = new HandlebarsAdapter();
+      }
+    }
+
     const mailerOptionsProvider = {
       provide: NEST_MAILER_OPTIONS,
       useValue: options,
