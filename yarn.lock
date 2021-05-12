@@ -3996,9 +3996,9 @@ nodemailer@6.4.11:
   integrity sha1-HwC0/9EGQD8XwD89Q9WUWyZ3BGw=
 
 nodemailer@^6.3.1, nodemailer@^6.4.13:
-  version "6.4.13"
-  resolved "https://registry.npm.taobao.org/nodemailer/download/nodemailer-6.4.13.tgz?cache=0&sync_timestamp=1601625489718&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fnodemailer%2Fdownload%2Fnodemailer-6.4.13.tgz#40e67cf5a32f2052258822a9394e190ea9714801"
-  integrity sha1-QOZ89aMvIFIliCKpOU4ZDqlxSAE=
+  version "6.4.16"
+  resolved "https://registry.yarnpkg.com/nodemailer/-/nodemailer-6.4.16.tgz#5cb6391b1d79ab7eff32d6f9f48366b5a7117293"
+  integrity sha512-68K0LgZ6hmZ7PVmwL78gzNdjpj5viqBdFqKrTtr9bZbJYj6BRj5W6WGkxXrEnUl3Co3CBXi3CZBUlpV/foGnOQ==
 
 normalize-package-data@^2.3.2, normalize-package-data@^2.5.0:
   version "2.5.0"
